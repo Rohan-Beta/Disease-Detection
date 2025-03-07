@@ -1,7 +1,6 @@
 import { Navbar } from "./components/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./components/About";
-import Contact from "./components/Contact";
 import Developer from "./components/Developer";
 import { Body } from "./components/Body";
 
@@ -27,15 +26,6 @@ function App() {
         <>
           {" "}
           <Navbar /> <About />{" "}
-        </>
-      ),
-    },
-    {
-      path: "/contact",
-      element: (
-        <>
-          {" "}
-          <Navbar /> <Contact />{" "}
         </>
       ),
     },

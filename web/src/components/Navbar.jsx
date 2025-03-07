@@ -35,12 +35,6 @@ export const Navbar = () => {
             About
           </Link>
           <Link
-            to="/contact"
-            className="hover:font-bold hover:underline cursor-pointer"
-          >
-            Contact
-          </Link>
-          <Link
             target="_"
             to="https://github.com/Rohan-Beta"
             className="hover:font-bold hover:underline cursor-pointer"
@@ -75,9 +69,6 @@ export const Navbar = () => {
             </Link>
             <Link to="/about" className="block px-4 py-2 hover:bg-gray-700">
               About
-            </Link>
-            <Link to="/contact" className="block px-4 py-2 hover:bg-gray-700">
-              Contact
             </Link>
             <Link
               target="_"
