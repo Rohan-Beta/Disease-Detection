@@ -156,7 +156,7 @@ export const Body = () => {
     <>
       <main>
         <div className="flex my-10">
-          <div className="bg-black text-white w-screen md:mx-32 mx-16 h-72 rounded-lg p-4">
+          <div className="bg-gray-800 text-white w-screen md:mx-32 mx-16 h-72 rounded-lg p-4">
             <form onSubmit={handleSubmit} action="/predict" method="post">
               <div className="mx-10">
                 <label htmlFor="inputsymptoms">Enter Symptoms:</label>

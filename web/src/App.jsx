@@ -3,6 +3,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./components/About";
 import Developer from "./components/Developer";
 import { Body } from "./components/Body";
+import Welcome from "./components/Welcome";
+import Contact from "./components/Contact";
 
 function App() {
   const router = createBrowserRouter([
@@ -10,11 +12,20 @@ function App() {
       path: "/",
       element: (
         <>
+          {" "}
+          <Welcome />{" "}
+        </>
+      ),
+    },
+    {
+      path: "/home",
+      element: (
+        <>
           <Navbar />
           <div>
-            <h1 className="text-center my-5 text-4xl font-semibold">
+            {/* <h1 className="text-center my-5 text-4xl font-semibold">
               Disease Detection
-            </h1>
+            </h1> */}
           </div>
           <Body />
         </>
@@ -26,6 +37,15 @@ function App() {
         <>
           {" "}
           <Navbar /> <About />{" "}
+        </>
+      ),
+    },
+    {
+      path: "/contact",
+      element: (
+        <>
+          {" "}
+          <Navbar /> <Contact />{" "}
         </>
       ),
     },

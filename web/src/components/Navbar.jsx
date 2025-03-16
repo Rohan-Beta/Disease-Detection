@@ -10,20 +10,20 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black flex justify-between items-center px-4 h-12 text-white w-screen">
+    <nav className="bg-green-600 flex justify-between items-center px-4 h-12 text-white w-screen">
       <div className="logo font-bold text-xl flex gap-3">
         <lord-icon
           src="https://cdn.lordicon.com/kpjdxodr.json"
           trigger="hover"
           stroke="light"
         ></lord-icon>
-        Disease Detection
+        CureMind
       </div>
 
       <ul className="md:block hidden">
         <li className="flex gap-6">
           <Link
-            to="/"
+            to="/home"
             className="hover:font-bold hover:underline cursor-pointer"
           >
             Home
@@ -33,6 +33,12 @@ export const Navbar = () => {
             className="hover:font-bold hover:underline cursor-pointer"
           >
             About
+          </Link>
+          <Link
+            to="/contact"
+            className="hover:font-bold hover:underline cursor-pointer"
+          >
+            Contact
           </Link>
           <Link
             target="_"
@@ -59,21 +65,24 @@ export const Navbar = () => {
         </button>
 
         {isDropdownOpen && (
-          <div className="absolute right-0 mt-2 w-48 bg-black text-white rounded-lg shadow-lg z-10">
+          <div className="absolute right-0 mt-2 w-48 bg-green-600 text-white rounded-lg shadow-lg z-10">
             <Link
-              to="/"
+              to="/home"
               className="block px-4 py-2
-            hover:bg-gray-700"
+            hover:bg-green-700"
             >
               Home
             </Link>
-            <Link to="/about" className="block px-4 py-2 hover:bg-gray-700">
+            <Link to="/about" className="block px-4 py-2 hover:bg-green-700">
               About
+            </Link>
+            <Link to="/contact" className="block px-4 py-2 hover:bg-green-700">
+              Contact
             </Link>
             <Link
               target="_"
               to="https://github.com/Rohan-Beta"
-              className="block px-4 py-2 hover:bg-gray-700"
+              className="block px-4 py-2 hover:bg-green-700"
             >
               Developer
             </Link>
