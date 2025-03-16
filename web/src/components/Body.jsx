@@ -115,13 +115,16 @@ export const Body = () => {
     try {
       // send post req to the server
 
-      const res = await fetch("http://localhost:3000/predict", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ inputsymptoms }),
-      });
+      const res = await fetch(
+        "https://expressserver-5ean.onrender.com/predict",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ inputsymptoms }),
+        }
+      );
 
       if (res.status === 500) {
         alert("Looks Like something went wrong, please try again properly");
@@ -205,10 +208,10 @@ export const Body = () => {
               </button>
 
               {showDialog && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="fixed inset-0 flex justify-center bg-black bg-opacity-50">
                   <div
                     className="bg-white p-6 rounded-lg w-[60%] 
-                md:w-1/3"
+                md:w-1/3 h-[23%] mt-40"
                   >
                     <h2 className="font-bold text-lg mb-4">Disease</h2>
                     <p className="overflow-auto md:overflow-hidden">
@@ -242,10 +245,10 @@ export const Body = () => {
               </button>
 
               {showDialog1 && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="fixed inset-0 flex justify-center bg-black bg-opacity-50">
                   <div
                     className="bg-white p-6 rounded-lg w-[60%] 
-                md:w-1/2"
+                md:w-1/2 h-[23%] mt-40"
                   >
                     <h2 className="font-bold text-lg mb-4">Description</h2>
                     <p className="overflow-auto">{desc}</p>
@@ -278,10 +281,10 @@ export const Body = () => {
               </button>
 
               {showDialog2 && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="fixed inset-0 flex justify-center bg-black bg-opacity-50">
                   <div
                     className="bg-white p-6 rounded-lg w-[60%]
-                md:w-1/3"
+                md:w-1/4 h-[32%]  mt-32"
                   >
                     <h2 className="font-bold text-lg mb-4">Precaution</h2>
                     <p className="overflow-auto">
@@ -319,10 +322,10 @@ export const Body = () => {
               </button>
 
               {showDialog3 && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="fixed inset-0 flex justify-center bg-black bg-opacity-50">
                   <div
                     className="bg-white p-6 rounded-lg md:w-1/2 
-                w-[60%]"
+                w-[60%] h-[23%] mt-40"
                   >
                     <h2 className="font-bold text-lg mb-4">Medication</h2>
                     <p className="overflow-auto">
@@ -360,8 +363,8 @@ export const Body = () => {
               {showDialog4 && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
                   <div
-                    className="bg-white p-6 rounded-lg w-[60%] 
-                md:w-1/3"
+                    className="bg-white p-6 rounded-lg w-[40%] 
+                md:w-1/4"
                   >
                     <h2 className="font-bold text-lg mb-4">Workout</h2>
                     <p className="overflow-auto">
@@ -398,10 +401,10 @@ export const Body = () => {
               </button>
 
               {showDialog5 && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="fixed inset-0 flex justify-center bg-black bg-opacity-50">
                   <div
                     className="bg-white p-6 rounded-lg w-[60%] 
-                md:w-1/2"
+                md:w-1/2 h-[23%] mt-40"
                   >
                     <h2 className="font-bold text-lg mb-4">Diets</h2>
                     <p className="overflow-auto">{diet}</p>
@@ -421,8 +424,8 @@ export const Body = () => {
             <div>
               <button
                 onClick={handleOpenDialog6}
-                className="bg-yellow-500 p-2 px-4 rounded-lg font-bold
-            hover:bg-yellow-400 flex items-center gap-1"
+                className="bg-orange-500 p-2 px-4 rounded-lg font-bold
+            hover:bg-orange-400 flex items-center gap-1"
               >
                 Doctor
                 <lord-icon
@@ -432,10 +435,10 @@ export const Body = () => {
               </button>
 
               {showDialog6 && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="fixed inset-0 flex justify-center bg-black bg-opacity-50">
                   <div
                     className="bg-white p-6 rounded-lg w-[60%] 
-                md:w-1/3"
+                md:w-1/4 h-[34%] mt-40"
                   >
                     <h2 className="font-bold text-lg mb-4">Doctor</h2>
                     <p className="overflow-auto">
@@ -472,10 +475,10 @@ export const Body = () => {
               </button>
 
               {showDialog7 && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="fixed inset-0 flex justify-center bg-black bg-opacity-50">
                   <div
                     className="bg-white p-6 rounded-lg w-[60%]
-                md:w-1/3"
+                md:w-1/4 h-[27%] mt-40"
                   >
                     <h2 className="font-bold text-lg mb-4">Related Symptoms</h2>
                     <p className="overflow-auto">
