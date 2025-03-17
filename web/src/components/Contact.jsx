@@ -3,23 +3,27 @@ import React from "react";
 const contacts = [
   {
     name: "Satadru Naskar",
-    email: "john.doe@example.com",
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    email: "satadru2003@gmail.com",
+    linkedin: "http://www.linkedin.com/in/satadru-naskar-7b4636299",
+    github: "https://github.com/Satadru-1234",
   },
   {
     name: "Rohit Raha",
     email: "rohitraha952@gmail.com",
     linkedin: "https://www.linkedin.com/in/rohitraha/",
+    github: "https://github.com/Rohan-Beta",
   },
   {
     name: "Parthib Mondal",
-    email: "mark.johnson@example.com",
-    linkedin: "https://www.linkedin.com/in/markjohnson",
+    email: "parthibmondal19@gmail.com",
+    linkedin: "http://linkedin.com/in/parthib-mondal-162354246/",
+    github: "https://github.com/PARTHIB-MONDAL3",
   },
   {
     name: "Promit Paul",
-    email: "emily.davis@example.com",
-    linkedin: "https://www.linkedin.com/in/emilydavis",
+    email: "promitpaul2003@gmail.com",
+    linkedin: "http://www.linkedin.com/in/promit-paul-9a621a23b",
+    github: "https://github.com/Promit11",
   },
 ];
 
@@ -59,6 +63,18 @@ const Contact = () => {
                 className="text-blue-500 hover:underline"
               >
                 {contact.name}'s LinkedIn
+              </a>
+            </p>
+
+            <p className="text-gray-600 mt-2">
+              Github:{" "}
+              <a
+                href={contact.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                {contact.name}'s Github
               </a>
             </p>
           </div>

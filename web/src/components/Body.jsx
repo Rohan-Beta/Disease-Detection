@@ -173,16 +173,11 @@ export const Body = () => {
                 />
               </div>
 
-              {/* <div>
-              <button className="bg-blue-600 p-2 rounded-full my-4">Start Speech Recognition</button>
-              </div> */}
-
               <div className="flex justify-center">
-                <button
-                  className="bg-blue-600 p-3 rounded-full my-4 
-              w-4/12 md:w-3/12 hover:bg-blue-500 flex justify-center items-center gap-2"
-                >
+                <button className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm p-3 my-4 w-4/12 md:w-3/12 text-center me-2 mb-2 hover:cursor-pointer">
+
                   Predict
+                  
                 </button>
               </div>
             </form>
@@ -478,7 +473,7 @@ export const Body = () => {
                 <div className="fixed inset-0 flex justify-center bg-black bg-opacity-50">
                   <div
                     className="bg-white p-6 rounded-lg w-[60%]
-                md:w-1/4 h-[27%] mt-40"
+                md:w-1/4 h-[28%] mt-40"
                   >
                     <h2 className="font-bold text-lg mb-4">Related Symptoms</h2>
                     <p className="overflow-auto">

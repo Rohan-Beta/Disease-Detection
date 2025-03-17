@@ -17,7 +17,7 @@ export const Navbar = () => {
           trigger="hover"
           stroke="light"
         ></lord-icon>
-        CureMind
+        <Link to="/">CureMind</Link>
       </div>
 
       <ul className="md:block hidden">
@@ -40,13 +40,13 @@ export const Navbar = () => {
           >
             Contact
           </Link>
-          <Link
+          {/* <Link
             target="_"
             to="https://github.com/Rohan-Beta"
             className="hover:font-bold hover:underline cursor-pointer"
           >
             Developer
-          </Link>
+          </Link> */}
         </li>
       </ul>
 
@@ -79,13 +79,13 @@ export const Navbar = () => {
             <Link to="/contact" className="block px-4 py-2 hover:bg-green-700">
               Contact
             </Link>
-            <Link
+            {/* <Link
               target="_"
               to="https://github.com/Rohan-Beta"
               className="block px-4 py-2 hover:bg-green-700"
             >
               Developer
-            </Link>
+            </Link> */}
           </div>
         )}
       </div>
